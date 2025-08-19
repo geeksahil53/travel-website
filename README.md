@@ -44,10 +44,13 @@ Edit
 ## 🖼️ Screenshots
 
 ### 🏝️ Home Page
-![Home Page](website/screenshots/homepage.png)
+![Home Page]<img width="465" height="277" alt="homepage" src="https://github.com/user-attachments/assets/a4061297-e2f5-4bf0-ab6a-52d0ec62c3e3" />
+
 
 ### 🖼️ Gallery Page
-![Gallery](website/screenshots/gallery.png)
+![Gallery]
+<img width="529" height="359" alt="gallery" src="https://github.com/user-attachments/assets/9eb1b122-1f8a-4fa7-b142-a07c927ed40a" />
+
 
 ---
 
