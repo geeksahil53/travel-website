@@ -44,7 +44,7 @@ Edit
 ## 🖼️ Screenshots
 
 ### 🏝️ Home Page
-![Home Page](website/screenshots/home.png)
+![Home Page](website/screenshots/homepage.png)
 
 ### 🖼️ Gallery Page
 ![Gallery](website/screenshots/gallery.png)
