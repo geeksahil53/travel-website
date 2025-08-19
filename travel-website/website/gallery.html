@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Beautiful Lombok Indonesia</title>
+    <meta name="description" content="Stunning photo gallery showcasing Lombok's pristine beaches, volcanic landscapes, traditional culture, and natural beauty. Inspiration for your Indonesian adventure.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-header">
+                <div class="nav-logo">
+                    <i class="fas fa-mountain"></i>
+                    <span>Discover Lombok</span>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="destinations.html" class="nav-link">Destinations</a>
+                    <a href="culture.html" class="nav-link">Culture</a>
+                    <a href="activities.html" class="nav-link">Activities</a>
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                    <a href="contact.html" class="nav-link contact-btn">Contact</a>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <button id="mobile-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="destinations.html" class="mobile-link">Destinations</a>
+            <a href="culture.html" class="mobile-link">Culture</a>
+            <a href="activities.html" class="mobile-link">Activities</a>
+            <a href="gallery.html" class="mobile-link active">Gallery</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header gallery-header">
+        <div class="page-header-bg"></div>
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Lombok Photo Gallery</h1>
+                <p>Stunning moments captured across the beautiful island of Lombok - a visual journey through paradise</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Gallery</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery intro-->
+    <section class="gallery-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>A Visual Journey Through Lombok</h2>
+                <p class="lead">Experience the breathtaking beauty of Lombok through our carefully curated collection of photographs. From pristine beaches and towering volcanoes to vibrant cultural traditions and hidden natural wonders, these images capture the essence of what makes Lombok Indonesia's hidden paradise.</p>
+                
+                <div class="gallery-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Beautiful Locations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Photo Categories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4K</div>
+                        <div class="stat-label">High Resolution</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--gGallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="beaches">Beaches</button>
+                <button class="filter-btn" data-filter="mountains">Mountains</button>
+                <button class="filter-btn" data-filter="culture">Culture</button>
+                <button class="filter-btn" data-filter="waterfalls">Waterfalls</button>
+                <button class="filter-btn" data-filter="underwater">Underwater</button>
+                <button class="filter-btn" data-filter="sunset">Sunsets</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Gridc -->
+    <section class="photo-gallery">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                
+                <!-- Beach pics-->
+                <div class="gallery-item" data-category="beaches">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pristine white sand beach with crystal clear turquoise water" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Gili Islands Beach</h3>
+                                <p>Crystal clear waters and pristine white sand</p>
+                                <span class="photo-credit">Photo: Raimond Klavins-Unsplash</span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beaches">
+                    <div class="gallery-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/28/13/08/fishermen-2983615_1280.jpg" alt="Traditional wooden boat on beautiful beach" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Traditional Fishing Boat</h3>
+                                <p>Colorful outrigger boat on Sekotong beach</p>
+                                <span class="photo-credit">Photo: Quangpraha-Pixabay </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beaches">
+                    <div class="gallery-image">
+                        <img src="https://media.istockphoto.com/id/621822524/photo/long-kuta-sand-beach-lombok-indonesia.jpg?s=1024x1024&w=is&k=20&c=-6MeuzgG9yGOANGv6UzfHPtZQKnTLFAi0Z7RXPxicQM=" alt="Kuta Lombok beach with perfect surfing waves" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Kuta Lombok Beach</h3>
+                                <p>Perfect waves for surfing enthusiasts</p>
+                                <span class="photo-credit">Photo: mazzzur-iStock </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mountai pics -->
+                <div class="gallery-item" data-category="mountains">
+                    <div class="gallery-image">
+                        <img src="https://media.istockphoto.com/id/525625699/photo/mount-rinjani-with-the-crater-lake-segara-anak-lombok-indonesia.jpg?s=2048x2048&w=is&k=20&c=JmnunreKuMlUykSZiNIWJpbWt0-3FlVTaaIUWZ45HIg=" alt="Mount Rinjani crater lake with dramatic volcanic landscape" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Mount Rinjani Crater Lake</h3>
+                                <p>Segara Anak lake from the crater rim</p>
+                                <span class="photo-credit">Photo: benedek-iStock </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mountains">
+                    <div class="gallery-image">
+                        <img src="https://cdn.pixabay.com/photo/2025/05/05/17/23/mountains-9580848_1280.jpg" alt="Volcanic landscape with dramatic rock formations" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Volcanic Rock Formations</h3>
+                                <p>Dramatic geological features of Mount Rinjani</p>
+                                <span class="photo-credit">Photo: dukeejoeXRT-pixabay </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mountains">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sunrise view from Mount Rinjani summit" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Summit Sunrise</h3>
+                                <p>Breathtaking dawn from 3,726 meters</p>
+                                <span class="photo-credit">Photo: Theodor Lundqvist-Unslpash</span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- culture pics -->
+                <div class="gallery-item" data-category="culture">
+                    <div class="gallery-image">
+                        <img src="https://media.istockphoto.com/id/2165682761/photo/the-traditional-village-of-lombok-island-indonesia.jpg?s=2048x2048&w=is&k=20&c=hHGEIyW5chYugOJwi64TNv_PyxvLm9ZIImZPuObJJ90=" alt="Traditional Sasak village with thatched roof houses" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Traditional Sasak Village</h3>
+                                <p>Authentic thatched roof architecture</p>
+                                <span class="photo-credit">Photo: wendi yuan-iStock </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1612978278909-cac04243a967?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Traditional weaving demonstration by Sasak artisan" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Traditional Weaving</h3>
+                                <p>Master artisan creating songket textiles</p>
+                                <span class="photo-credit">Photo: Jamalludin Khaer-Unsplash </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1620140036708-455ed5c0426a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Traditional Sasak pottery making process" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Pottery Making</h3>
+                                <p>Traditional clay vessel creation in Banyumulek</p>
+                                <span class="photo-credit">Photo: Aedrian Salazar-Unsplash </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Waterfall pics -->
+                <div class="gallery-item" data-category="waterfalls">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/2562540/pexels-photo-2562540.jpeg" alt="Tiu Kelep waterfall surrounded by lush tropical forest" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Tiu Kelep Waterfall</h3>
+                                <p>42-meter cascade in pristine rainforest</p>
+                                <span class="photo-credit">Photo: Maria Gulyaeva-pexels</span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="waterfalls">
+                    <div class="gallery-image">
+                        <img src="https://media.istockphoto.com/id/1419023689/photo/sendang-gile.jpg?s=1024x1024&w=is&k=20&c=vCrzNNhS3RUB2aL6-fwk5oiHPKFvYuOiOeK0QedKSbU=" alt="Sendang Gile waterfall with misty atmosphere" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sendang Gile Waterfall</h3>
+                                <p>Mystical atmosphere with rainbow mists</p>
+                                <span class="photo-credit">Photo: Eleanor Swanson Scott-iStock </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="waterfalls">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1713787487973-3a31d2dd9e18?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Natural swimming pool at waterfall base" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Natural Swimming Pool</h3>
+                                <p>Crystal clear mountain water for refreshing dips</p>
+                                <span class="photo-credit">Photo: Nguyen hiep-Unsplash </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Underwater -->
+                <div class="gallery-item" data-category="underwater">
+                    <div class="gallery-image">
+                        <img src="https://media.istockphoto.com/id/521113609/photo/indonesian.jpg?s=2048x2048&w=is&k=20&c=dX3_gbnD-VuPknCpilwe-7HcZn35-CCmtwNrg1A--xI=" alt="Colorful coral reef with tropical fish" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Vibrant Coral Reef</h3>
+                                <p>Underwater paradise around Gili Islands</p>
+                                <span class="photo-credit">Photo: mihtiander-iStock </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="underwater">
+                    <div class="gallery-image">
+                        <img src="https://cdn.pixabay.com/photo/2013/11/25/15/17/turtle-218030_1280.jpg" alt="Sea turtle swimming in clear blue water" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sea Turtle Encounter</h3>
+                                <p>Friendly green sea turtle in its natural habitat</p>
+                                <span class="photo-credit">Photo: ThousandImages-PixaBay</span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="underwater">
+                    <div class="gallery-image">
+                        <img src="https://cdn.pixabay.com/photo/2014/06/27/12/36/fish-378286_1280.jpg" alt="School of tropical fish over coral garden" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Tropical Fish School</h3>
+                                <p>Diverse marine life in pristine waters</p>
+                                <span class="photo-credit">Photo: Joakant-Pixabay</span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sunset -->
+                <div class="gallery-item" data-category="sunset">
+                    <div class="gallery-image">
+                        <img src="https://cdn.pixabay.com/photo/2022/10/27/05/55/sunset-7550116_1280.jpg" alt="Spectacular sunset over ocean with silhouetted boats" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Ocean Sunset</h3>
+                                <p>Golden hour magic over the Indonesian seas</p>
+                                <span class="photo-credit">Photo: Diz_Daily-pixabay </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="sunset">
+                    <div class="gallery-image">
+                        <img src="https://cdn.pixabay.com/photo/2014/09/10/00/59/mountains-440520_1280.jpg" alt="Mountain sunset with dramatic clouds" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Mountain Sunset</h3>
+                                <p>Dramatic skies over Lombok's peaks</p>
+                                <span class="photo-credit">Photo: FotoCitizen-Pixabay </span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="sunset">
+                    <div class="gallery-image">
+                        <img src="https://media.istockphoto.com/id/856750844/photo/sunrise-on-a-beach-in-bali-indonesia.jpg?s=2048x2048&w=is&k=20&c=lq0UEpe-LAV04b4av0xutF_90sz6TscfhR5iE8jNp04=" alt="Beach sunset with traditional outrigger boat" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Beach Sunset</h3>
+                                <p>Traditional boat silhouetted against golden sky</p>
+                                <span class="photo-credit">Photo: febriyanta-iStock</span>
+                            </div>
+                            <button class="gallery-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="gallery-actions">
+                <button class="btn btn-secondary" id="load-more" style="display: none;">
+                    <i class="fas fa-plus"></i>
+                    Load More Photos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography Tips -->
+    <section class="photography-tips">
+        <div class="container">
+            <h2>Photography Tips for Lombok</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Golden Hour Magic</h3>
+                    <p>The best lighting occurs during sunrise and sunset. Plan your photography sessions around these times for warm, dramatic lighting that enhances natural beauty.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Respect Local Culture</h3>
+                    <p>Always ask permission before photographing people, especially in traditional villages. Many locals appreciate a small donation for portraits.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Protect Your Gear</h3>
+                    <p>Bring waterproof bags for beach and waterfall photography. The tropical climate can be humid, so silica gel packets help prevent lens fogging.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Capture Local Life</h3>
+                    <p>Visit local markets, fishing villages, and craft workshops early in the morning for authentic scenes of daily Sasak life and traditional activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" src="" alt="">
+                <div class="lightbox-info">
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-description"></p>
+                    <span id="lightbox-credit"></span>
+                </div>
+            </div>
+            <button class="lightbox-nav lightbox-prev" onclick="previousImage()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" onclick="nextImage()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Coa -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Create Your Own Memories?</h2>
+                <p>Experience these breathtaking locations firsthand and capture your own amazing moments in Lombok's paradise.</p>
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-camera"></i>
+                    Plan Your Photo Tour
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-mountain"></i>
+                        <span>Discover Lombok</span>
+                    </div>
+                    <p>Your gateway to authentic Indonesian adventures. We specialize in creating unforgettable experiences that showcase the natural beauty and rich culture of Lombok Island.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mataram, Lombok, Indonesia</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 123 456 789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@discoverlombok.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Discover Lombok. All rights reserved.</p>
+                <p class="image-credits">
+                    <strong>Photography Credits:</strong> All photos are sourced from royalty free sites like unsplash, Pixabay, iStock, Pexels with proper licensing for educational use.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Gallery filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter gallery items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Lightbox functionality
+        let currentImageIndex = 0;
+        let visibleImages = [];
+
+        function updateVisibleImages() {
+            visibleImages = Array.from(galleryItems).filter(item => 
+                item.style.display !== 'none' && item.style.opacity !== '0'
+            );
+        }
+
+        function openLightbox(button) {
+            updateVisibleImages();
+            const galleryItem = button.closest('.gallery-item');
+            currentImageIndex = visibleImages.indexOf(galleryItem);
+            
+            const img = galleryItem.querySelector('img');
+            const title = galleryItem.querySelector('h3').textContent;
+            const description = galleryItem.querySelector('p').textContent;
+            const credit = galleryItem.querySelector('.photo-credit').textContent;
+            
+            document.getElementById('lightbox-image').src = img.src;
+            document.getElementById('lightbox-image').alt = img.alt;
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-description').textContent = description;
+            document.getElementById('lightbox-credit').textContent = credit;
+            
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextImage() {
+            updateVisibleImages();
+            currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
+            showCurrentImage();
+        }
+
+        function previousImage() {
+            updateVisibleImages();
+            currentImageIndex = (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
+            showCurrentImage();
+        }
+
+        function showCurrentImage() {
+            const currentItem = visibleImages[currentImageIndex];
+            const img = currentItem.querySelector('img');
+            const title = currentItem.querySelector('h3').textContent;
+            const description = currentItem.querySelector('p').textContent;
+            const credit = currentItem.querySelector('.photo-credit').textContent;
+            
+            document.getElementById('lightbox-image').src = img.src;
+            document.getElementById('lightbox-image').alt = img.alt;
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-description').textContent = description;
+            document.getElementById('lightbox-credit').textContent = credit;
+        }
+
+        // Keyboard navi for lightbox
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('lightbox').classList.contains('active')) {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowRight') {
+                    nextImage();
+                } else if (e.key === 'ArrowLeft') {
+                    previousImage();
+                }
+            }
+        });
+
+    
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+    </script>
+</body>
+</html>

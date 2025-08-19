@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Plan Your Lombok Adventure</title>
+    <meta name="description" content="Contact Discover Lombok to plan your perfect Indonesian adventure. Get travel advice, book tours, and create unforgettable memories in paradise.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-header">
+                <div class="nav-logo">
+                    <i class="fas fa-mountain"></i>
+                    <span>Discover Lombok</span>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="destinations.html" class="nav-link">Destinations</a>
+                    <a href="culture.html" class="nav-link">Culture</a>
+                    <a href="activities.html" class="nav-link">Activities</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link active contact-btn">Contact</a>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <button id="mobile-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="destinations.html" class="mobile-link">Destinations</a>
+            <a href="culture.html" class="mobile-link">Culture</a>
+            <a href="activities.html" class="mobile-link">Activities</a>
+            <a href="gallery.html" class="mobile-link">Gallery</a>
+            <a href="contact.html" class="mobile-link active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="page-header-bg"></div>
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Plan Your Lombok Adventure</h1>
+                <p>Ready to explore paradise? Contact us to plan your perfect Indonesian getaway</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Contact</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact introo-->
+    <section class="contact-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Let's Plan Your Dream Trip</h2>
+                <p class="lead">Our local experts are here to help you create the perfect Lombok experience. Whether you're seeking adventure, cultural immersion, or relaxation, we'll design a personalized itinerary that exceeds your expectations.</p>
+                
+                <div class="contact-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Local Expertise</h3>
+                        <p>Our team of local guides knows every hidden gem and secret spot on the island.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Personalized Service</h3>
+                        <p>Every itinerary is customized to match your interests, budget, and travel style.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Safe & Reliable</h3>
+                        <p>Professional guides, quality equipment, and comprehensive safety protocols.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Community Support</h3>
+                        <p>We support local communities through responsible tourism practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Send Us Your Travel Inquiry</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours with a personalized travel proposal.</p>
+                </div>
+                
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <span class="error-message" id="firstName-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <span class="error-message" id="lastName-error"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                        <span class="form-help">Include country code (e.g., +44 123 456 7890)</span>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="travelDates">Preferred Travel Dates</label>
+                            <input type="date" id="travelDates" name="travelDates">
+                        </div>
+                        <div class="form-group">
+                            <label for="groupSize">Group Size *</label>
+                            <select id="groupSize" name="groupSize" required>
+                                <option value="">Select group size</option>
+                                <option value="1">Solo traveler</option>
+                                <option value="2">2 people</option>
+                                <option value="3-4">3-4 people</option>
+                                <option value="5-8">5-8 people</option>
+                                <option value="9+">9+ people</option>
+                            </select>
+                            <span class="error-message" id="groupSize-error"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget (USD)</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-500">Under $500 per person</option>
+                            <option value="500-1000">$500 - $1,000 per person</option>
+                            <option value="1000-2000">$1,000 - $2,000 per person</option>
+                            <option value="2000-3000">$2,000 - $3,000 per person</option>
+                            <option value="over-3000">Over $3,000 per person</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Interests (Select all that apply) *</label>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests[]" value="beaches">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-label">Beaches & Islands</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests[]" value="trekking">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-label">Volcano Trekking</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests[]" value="culture">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-label">Cultural Experiences</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests[]" value="diving">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-label">Snorkeling & Diving</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests[]" value="waterfalls">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-label">Waterfalls & Nature</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests[]" value="surfing">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-label">Surfing</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests[]" value="photography">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-label">Photography Tours</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests[]" value="relaxation">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-label">Relaxation & Wellness</span>
+                            </label>
+                        </div>
+                        <span class="error-message" id="interests-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Tell us about your dream Lombok adventure</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Describe what you're hoping to experience in Lombok, any special requirements, dietary restrictions, or questions you have..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-item newsletter-checkbox">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span class="checkmark"></span>
+                            <span class="checkbox-label">I'd like to receive travel tips and special offers about Indonesia</span>
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Travel Inquiry
+                        </button>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <p><i class="fas fa-shield-alt"></i> Your privacy is important to us. We will never share your information with third parties.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- cotnact infos -->
+    <section class="contact-info-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="method-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>Visit Our Office</h3>
+                        <p>Jl. Raya Senggigi No. 123<br>
+                        Senggigi, West Lombok<br>
+                        83355, Indonesia</p>
+                        <a href="#" class="method-link">Get Directions</a>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="method-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>Call Us</h3>
+                        <p>Local: +62 370 693 007<br>
+                        WhatsApp: +62 812 3456 7890<br>
+                        Emergency: +62 811 9876 5432</p>
+                        <a href="tel:+6237069300" class="method-link">Call Now</a>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="method-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>Email Us</h3>
+                        <p>General: info@discoverlombok.com<br>
+                        Bookings: tours@discoverlombok.com<br>
+                        Support: support@discoverlombok.com</p>
+                        <a href="mailto:info@discoverlombok.com" class="method-link">Send Email</a>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="method-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>Office Hours</h3>
+                        <p>Monday - Saturday: 8:00 AM - 6:00 PM<br>
+                        Sunday: 9:00 AM - 4:00 PM<br>
+                        WITA (UTC+8)</p>
+                        <a href="#" class="method-link">24/7 Emergency Line</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How far in advance should I book?</h3>
+                    <p>We recommend booking at least 2-4 weeks in advance, especially for Mount Rinjani treks and during peak season (July-September). However, we can often accommodate last-minute requests.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What's included in your tour packages?</h3>
+                    <p>Our packages typically include transportation, professional guides, entrance fees, equipment rental, and meals as specified. Accommodation can be arranged upon request.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you offer transportation from the airport?</h3>
+                    <p>Yes, we provide airport transfers from Lombok International Airport to your accommodation and tour starting points. This can be arranged when booking.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What's the best time to visit Lombok?</h3>
+                    <p>The dry season (April-October) offers the best weather for most activities. For volcano trekking, avoid the rainy season (November-March) when trails can be dangerous.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Are your tours suitable for beginners?</h3>
+                    <p>We offer activities for all fitness levels. Our guides will assess your abilities and recommend appropriate adventures. We have easy beach tours to challenging multi-day treks.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What should I bring for activities?</h3>
+                    <p>We provide most equipment, but you should bring comfortable clothing, sunscreen, personal medications, and appropriate footwear. We'll send a detailed packing list upon booking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COa -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Adventure?</h2>
+                <p>Don't wait - paradise is calling. Contact us today and let's begin planning your unforgettable Lombok experience.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+6237069300" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Call Us Now
+                    </a>
+                    <a href="mailto:info@discoverlombok.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Send Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-mountain"></i>
+                        <span>Discover Lombok</span>
+                    </div>
+                    <p>Your gateway to authentic Indonesian adventures. We specialize in creating unforgettable experiences that showcase the natural beauty and rich culture of Lombok Island.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mataram, Lombok, Indonesia</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 123 456 789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@discoverlombok.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Discover Lombok. All rights reserved. | Privacy Policy | Terms of Service</p>
+                <p class="image-credits">
+                    Image Credits: All images are sourced from royalty free sites like unsplash, Pixabay, iStock, Pexels with proper licensing for educational use.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Form validation and submission
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Clear previous errors
+            const errorMessages = document.querySelectorAll('.error-message');
+            errorMessages.forEach(msg => msg.textContent = '');
+            
+            let isValid = true;
+            
+            // Validate first name
+            const firstName = document.getElementById('firstName');
+            if (!firstName.value.trim()) {
+                document.getElementById('firstName-error').textContent = 'First name is required';
+                isValid = false;
+            }
+            
+            //  last name
+            const lastName = document.getElementById('lastName');
+            if (!lastName.value.trim()) {
+                document.getElementById('lastName-error').textContent = 'Last name is required';
+                isValid = false;
+            }
+            
+            //  email
+            const email = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim()) {
+                document.getElementById('email-error').textContent = 'Email address is required';
+                isValid = false;
+            } else if (!emailRegex.test(email.value)) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email address';
+                isValid = false;
+            }
+            
+            //  group size
+            const groupSize = document.getElementById('groupSize');
+            if (!groupSize.value) {
+                document.getElementById('groupSize-error').textContent = 'Please select your group size';
+                isValid = false;
+            }
+            
+            
+            const interests = document.querySelectorAll('input[name="interests[]"]:checked');
+            if (interests.length === 0) {
+                document.getElementById('interests-error').textContent = 'Please select at least one interest';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                //  success message
+                alert('Thank you for your inquiry! We will contact you within 24 hours to discuss your Lombok adventure.');
+                contactForm.reset();
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+    </script>
+</body>
+</html>
