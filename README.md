@@ -73,8 +73,4 @@ Deploy on GitHub Pages for live demo
 Created by Sahil.
 If you find this useful, consider ⭐ starring the repo!
 
-yaml
-Copy
-Edit
-
 ---
