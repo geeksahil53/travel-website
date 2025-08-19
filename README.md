@@ -1,13 +1,13 @@
 # travel-website
 A multi-page travel &amp; culture website built with HTML5 and CSS3
-# 🌍 Travel & Culture Website
+#  Travel & Culture Website
 
 A responsive **multi-page website** built using **HTML5 and CSS3**.  
 This project demonstrates front-end development skills in web design, layout structuring, and usability.
 
 ---
 
-## ✨ Features
+##  Features
 - **Home Page** (`index.html`) – clean navigation and layout  
 - **Activities Page** – highlights things to do  
 - **Destinations Page** – travel spots and guides  
@@ -18,13 +18,13 @@ This project demonstrates front-end development skills in web design, layout str
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 - HTML5  
 - CSS3  
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 docs/ → Project documentation
 website/ → Source code (HTML + CSS)
 
@@ -34,7 +34,7 @@ Edit
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone the repository:
    ```bash
@@ -43,13 +43,13 @@ Navigate to the website/ folder.
 
 Open index.html in your browser.
 
-💡 Future Improvements
+## Future Improvements
 Add JavaScript interactivity (e.g., form validation, dynamic gallery)
 
 Make the design fully mobile responsive
 
 Deploy on GitHub Pages or Netlify for live demo
 
-📬 Contact
+## Contact
 Created by Sahil.
 If you find this useful, consider ⭐ starring the repo!
