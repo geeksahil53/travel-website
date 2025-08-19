@@ -62,14 +62,14 @@ Navigate to the website/ folder.
 
 Open index.html in your browser.
 
-💡 Future Improvements
+## Future Improvements
 Add JavaScript interactivity (form validation, dynamic gallery)
 
 Make the design fully mobile responsive
 
 Deploy on GitHub Pages for live demo
 
-📬 Contact
+## Contact
 Created by Sahil.
 If you find this useful, consider ⭐ starring the repo!
 
